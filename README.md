@@ -1,12 +1,5 @@
-# Minimal Next.js Template
+# Sanity Blog Demo
 
-This is a Next.js project template you can use as a starting point for your Next.js project.
+This is a project to demonstrate how to create a personal blog using Next.js and Sanity.
 
-## Features
-
-- Next.js App router
-- TailwindCSS
-- All Next.js boilerplate code removed
-- Prettier for code formatting
-- Eslint for code linting
-- Husky and lint-staged for running the formatter and linter on staged files before committing them to git
+[Check out my guide](https://www.danvarela.com/blogs/creating-a-personal-blog-with-next-js-and-sanity-setting-up-sanity)
