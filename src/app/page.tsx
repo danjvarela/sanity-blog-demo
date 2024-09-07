@@ -1,3 +1,23 @@
+import { H1, P } from "@/components/ui/typography";
+import { Link } from "@/components/ui/link";
+
 export default function Home() {
-  return <main>hello world</main>;
+  return (
+    <>
+      <H1>Home</H1>
+      <P>
+        This is a sample site to demonstrate how to create a personal blog using
+        Sanity and Next.js.
+      </P>
+      <P>
+        <Link href="/blogs">Go to the blogs section</Link>
+      </P>
+      <P>
+        <Link href="https://example.com">
+          Visit my guide on how to create a personal blog using Sanity and
+          Next.js
+        </Link>
+      </P>
+    </>
+  );
 }
