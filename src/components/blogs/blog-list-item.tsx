@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { POSTS_QUERYResult } from "../../../sanity.types";
+import { POSTS_QUERYResult } from "@/sanity/types";
 import { Link } from "../ui/link";
 import { typographyVariants } from "../ui/typography";
 import { formatDistanceToNow, format } from "date-fns";

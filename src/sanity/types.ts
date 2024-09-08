@@ -303,7 +303,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/sanity/lib/queries.ts
 // Variable: POSTS_QUERY
-// Query: *[_type == "post" && defined(slug.current)]{    _id,    body,    slug,    title,    categories[]->{      slug,      title    },    publishedAt,    _createdAt,    mainImage{      asset->{        url,        metadata{          dimensions,          lqip        }      }    }  }
+// Query: *[_type == "post" && defined(slug.current)]{    _id,    body,    slug,    title,    categories[]->{      slug,      title    },    publishedAt,    _createdAt,    mainImage{      asset->{        url,        metadata{          dimensions,          lqip        }      }    }  } | order(_createdAt desc)
 export type POSTS_QUERYResult = Array<{
   _id: string;
   body: Array<
@@ -413,7 +413,7 @@ export type POST_QUERYResult = {
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
-    '*[_type == "post" && defined(slug.current)]{\n    _id,\n    body,\n    slug,\n    title,\n    categories[]->{\n      slug,\n      title\n    },\n    publishedAt,\n    _createdAt,\n    mainImage{\n      asset->{\n        url,\n        metadata{\n          dimensions,\n          lqip\n        }\n      }\n    }\n  }': POSTS_QUERYResult;
+    '*[_type == "post" && defined(slug.current)]{\n    _id,\n    body,\n    slug,\n    title,\n    categories[]->{\n      slug,\n      title\n    },\n    publishedAt,\n    _createdAt,\n    mainImage{\n      asset->{\n        url,\n        metadata{\n          dimensions,\n          lqip\n        }\n      }\n    }\n  } | order(_createdAt desc)': POSTS_QUERYResult;
     '*[_type == "post" && slug.current == "my-first-blog"][0]{\n    title,\n    body,\n    mainImage{\n      ...,\n      asset->{\n        url,\n        metadata{\n          dimensions,\n          lqip\n        }\n      }\n    }\n  }': POST_QUERYResult;
   }
 }

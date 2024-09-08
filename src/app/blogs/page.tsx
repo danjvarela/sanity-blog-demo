@@ -1,6 +1,6 @@
 import { sanityFetch } from "@/sanity/lib/client";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
-import { POSTS_QUERYResult } from "../../../sanity.types";
+import { POSTS_QUERYResult } from "@/sanity/types";
 import { BlogListItem } from "@/components/blogs/blog-list-item";
 import { H1, P } from "@/components/ui/typography";
 import { Link } from "@/components/ui/link";
