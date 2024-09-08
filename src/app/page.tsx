@@ -13,7 +13,7 @@ export default function Home() {
         <Link href="/blogs">Go to the blogs section</Link>
       </P>
       <P>
-        <Link href="https://example.com">
+        <Link href="https://www.danvarela.com/blogs/creating-a-personal-blog-with-next-js-and-sanity-setting-up-sanity">
           Visit my guide on how to create a personal blog using Sanity and
           Next.js
         </Link>
